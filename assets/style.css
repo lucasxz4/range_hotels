@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Work Sans';
+    background-color: #f7f5f7;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    position: relative;
+    background-image: url(../images/bg_topo_1600x1374.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-family: 'Dancing Script';
+    color: #612674;
+    font-weight: 700;
+}
+
+i {
+    cursor: pointer;
+    font-size: 2.2em;
+    width: 35.2px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: #ffffffa2;
+}
+
+.Menu {
+    display: none;
+}
+
+.Menu li {
+    list-style-type: none;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    padding: 0px 5px;
+    margin: auto;
+}
+
+.Menu li a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.ft1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 20px 5px;
+}
+
+.ft1 h2 {
+    color: #612674;
+    font-size: 2em;
+    text-align: center;
+}
+
+.btn-descubra {
+    margin: auto;
+}
+
+.btn-descubra button {
+    background-color: #5ac4c6;
+    border-radius: 10px;
+    padding: 8px;
+    color: #f7f7f7;
+    font-weight: 600;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-descubra button:hover {
+    transform: scale(1.1);
+}
+
+.hospedagem, .localizacao, .restaurante, .faleConosco {
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.faleConosco {
+    margin-bottom: 50px;
+}
+
+#bx {
+    margin: auto;
+    color: #bb36e7;
+    box-shadow: 0px 0px 3px #bb36e7;
+}
+
+.hospedagem h2, .localizacao h2, .restaurante h2, .faleConosco h2 {
+    color: #612674;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.hotel, .chale, .familiar, .romantico {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    padding: 20px 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #b8b8b8;
+    margin-bottom: 30px;
+}
+
+.imagemHotel {
+    background-image: url(../images/hostel.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.imagemChale {
+    background-image: url(../images/chale.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.imagemFamiliar {
+    background-image: url(../images/familiar.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.imagemRomantico {
+    background-image: url(../images/romantico.png);
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.hotel h1, .chale h1, .familiar h1, .romantico h1 {
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #612674;
+    text-shadow: 0px 0px 2px #00000081;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #00000028;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
