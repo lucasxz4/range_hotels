@@ -17,8 +17,9 @@ body, html {
 header {
     display: flex;
     position: relative;
-    background-image: url(../images/bg_topo_1600x1374.jpg);
+    background-image: url(../images/bg_topo_1198x670.jpg);
     background-size: cover;
+    padding: 10px 0px;
 }
 
 header h1 {
@@ -27,8 +28,12 @@ header h1 {
     transform: translateX(-50%);
     white-space: nowrap;
     font-family: 'Dancing Script';
-    color: #612674;
+    color: #fff;
     font-weight: 700;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.574), rgba(20, 20, 20, 0.344), rgba(58, 60, 196, 0.876));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
 }
 
 i {
@@ -41,7 +46,7 @@ i {
     display: flex;
     flex-direction: column;
     z-index: 10;
-    background-color: #ffffffa2;
+    background-color: #dbcafc;
 }
 
 .Menu {
@@ -54,6 +59,7 @@ i {
     text-align: center;
     padding: 0px 5px;
     margin: auto;
+    padding: 10px 0px;
 }
 
 .Menu li a {
@@ -174,4 +180,102 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
+}
+
+
+/* MEDIA QUERY */
+
+
+@media screen and (min-width: 700px) {
+    header {
+        height: 50vh;
+        background-image: url(../images/bg_topo_1600x1374.jpg);
+    }
+
+    header h1 {
+        top: 50%;
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .nav {
+        flex-direction: row;
+        width: 100%;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+    }
+    
+    .nav i {
+        display: none;
+    }
+    
+    .Menu {
+        width: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        background-color: #9052a57e;
+        height: 10vh;
+    }
+
+    .Menu li {
+        border: none;
+    }
+
+    .Menu li a {
+        background-color: #612674;
+        border-radius: 10px;
+        padding: 10px;
+        color: #fff;
+    }
+
+    .ft1, .hospedagem, .localizacao, .restaurante, .faleConosco {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ft1 h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .ft1 p, .hospedagem p, .localizacao p, .restaurante p, .faleConosco p {
+        text-align: center;
+        width: 80%;
+    }
+
+    .hospedagem, .localizacao, .restaurante, .faleConosco {
+        border: 2px solid #fff;
+        margin: 30px 20px;
+    }
+
+    .faleConosco {
+        margin-bottom: 140px;
+    }
+
+    .hotel, .chale, .familiar, .romantico {
+        margin: 60px 40px;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagemHotel, .imagemChale, .imagemFamiliar, .imagemRomantico {
+        width: 70%;
+        margin: auto;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .hotel h1, .chale h1, .familiar h1, .romantico h1 {
+        border-bottom: 2px solid #473d3d67;
+        width: 100%;
+    }
+
+    .hotel p, .chale p, .familiar p, .romantico p {
+        margin: 40px 0px;
+        text-align: center;
+        width: 590px;
+    }
 }
